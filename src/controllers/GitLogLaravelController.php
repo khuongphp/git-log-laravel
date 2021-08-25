@@ -39,7 +39,7 @@ class GitLogLaravelController extends Controller
         }
 
         $data = [
-            'records' => $this->gitLogParser->parseLog($this->processRun(['git', 'log']))
+            'records' => $this->gitLogParser->parseLog($this->processRun(['git', 'log', '-n', '20']))
         ];
 
         return app('view')->make($this->view_log, $data);
