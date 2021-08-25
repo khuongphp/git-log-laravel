@@ -95,7 +95,7 @@
   function getFiles(hash) {
     $.ajax({
       type: "get",
-      url: "/git_log?token={{ csrf_token() }}",
+      url: "{{route('git_log')}}?token={{ csrf_token() }}",
       data: {
         hash: hash
       },
