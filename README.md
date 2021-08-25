@@ -27,7 +27,7 @@ Emtiazzahid\GitLogLaravel\GitLogServiceProvider::class,
 
 Add a route in your web routes file:
 ```php 
-Route::get('git_log', '\EmtiazZahid\GitLogLaravel\GitLogLaravelController@index');
+Route::get('git_log', '\EmtiazZahid\GitLogLaravel\GitLogLaravelController@index')->name('git_log');
 ```
 
 Go to `http://myapp/git_log` or some other route
